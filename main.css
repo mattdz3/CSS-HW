@@ -1,3 +1,32 @@
+@-webkit-keyframes infinite-spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+  }
+}
+
+@-webkit-keyframes font {
+        0%, 100% {
+                font-size: 30px;
+        }
+        50% {
+                font-size: 60px;
+        }
+}
+
+@-webkit-keyframes transparent {
+	
+	0% {opacity: 0;}
+
+	100% {opacity: 1;} 
+}
+
+
+.title {
+     -webkit-animation: font 2s infinite;
+}
 
 
 h1 {
@@ -35,8 +64,6 @@ p {
 	margin-right: 120px;
 	margin-left: 30px;
 	width: 15%;
-
-
 }
 
 .ex1 {
@@ -51,7 +78,6 @@ p {
 	float: right;
 	margin-right: 60px;
 	border-radius: 10px;
-
 }
 
 .ex1:hover {
@@ -100,7 +126,6 @@ p {
 	float: right;
 	margin-right: 60px;
 	border-radius: 10px;
-
 }
 
 .ex3:active {
@@ -124,6 +149,7 @@ p {
 	height: 50px;
 	width: 200px;
 	color: white;
+	letter-spacing: 2px;
 	text-align: center;
 	background-color: rgb(71, 119, 69);
 	float: right;
@@ -138,13 +164,15 @@ p {
 	padding-top: 70px;
 }
 
-.ex5 {height: 50px;
+.ex5 {
+	height: 50px;
 	width: 200px;
 	color: white;
+	letter-spacing: 2px;
 	text-align: center;
 	background-color: rgb(71, 119, 69);
 	float: right;
-	margin: 100px auto;
+	margin-top: 100px;
 	border-radius: 10px;
 	font-size: 26px;
 	line-height: 42px;
@@ -155,15 +183,92 @@ p {
 	height: 45px;
 	margin-top: 105px;
 	box-shadow: inset 0px -5px 0px rgb(43, 87, 32);
+	transition: all .5s ease;
 }
 
 .ex5:active {
 	height: 41px;
 	margin-top: 109px;
 	box-shadow: inset 0px -1px 0px rgb(43, 87, 32);
+	transition: all .1s ease;
 }
 
+.para6 {
+	padding-top: 100px;
+}
 
+.ex6 {
+	height: 50px;
+	width: 200px;
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+	background-color: rgb(71, 119, 69);
+	float: right;
+	margin-top: 100px;
+	border-radius: 10px;
+	font-size: 26px;
+	line-height: 42px;
+	box-shadow: inset  0px -10px 0px 0px rgb(43, 87, 32);
+	text-shadow: 0px 2px 1px  rgb(37, 35, 35);
+	}
 
+.ex6:hover {
+	line-height: 35px;
+	text-shadow: 0px 10px 10px rgb(37, 35, 35);
+	transition: all 2s ease;
+}
 
+.ex6:active {
+	line-height: 42px;
+	text-shadow: 0px 2px 1px rgb(37, 35, 35);
+	height: 41px;
+	margin-top: 109px;
+	box-shadow: inset 0px -1px 0px rgb(43, 87, 32);
+	transition: all .3s ease;
+}
+
+.para7 {
+	padding-top: 20px;
+}
+
+.ex7 {
+	margin-top: 110px;
+}
+
+.para8 {
+	padding-top: 100px;
+}
+
+.spin {
+	width: 80px;
+	height: 80px;
+	margin-top: 1000px;
+     -webkit-animation: infinite-spinning 2s infinite;
+}
+
+.spin:hover {
+	width: 220px;
+	height: 220px;
+	transition: all 2s ease;
+
+}
+
+.para9 {
+	padding-top: 80px;
+}
+
+.transparent {
+	background-image: url(http://headshotsmarathon.org/home/wp-content/uploads/2012/02/Megaman8bit.jpg);
+	margin-top: 50px;
+	width: 280px;
+	height: 310px;
+}
+
+.transparent:active {
+	background-image: url(http://static.gamesradar.com/images/mb/GamesRadar/us/Games/M/Mega%20Man%209/Everything%20Else/Raw/rock1--article_image.jpg);
+	margin-top: 50px;
+	width: 420px;
+	height: 310px;
+}
 
