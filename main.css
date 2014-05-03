@@ -115,7 +115,7 @@ p {
 }
 
 .ex3 {
-	margin-top: 130px;
+	margin-top: 110px;
 	background-color: rgb(71, 119, 69);
 	font-size: 22px;
 	width: 150px;
@@ -139,6 +139,28 @@ p {
 	border-radius: 100px;
 	width: 120px;
 	transition: all 1s ease;
+}
+
+.para1 {
+	padding-top: 100px;
+}
+
+.ex {
+	margin-top: 110px;
+	background-color: rgb(71, 119, 69);
+	font-size: 22px;
+	width: 150px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	display: block;
+	float: right;
+	margin-right: 60px;
+	border-radius: 10px;
+}
+
+.ex:hover {
+	background-color: blue;
 }
 
 .para4 {
@@ -237,21 +259,14 @@ p {
 }
 
 .para8 {
-	padding-top: 100px;
+	padding-top: 0px;
 }
 
 .spin {
 	width: 80px;
 	height: 80px;
-	margin-top: 1000px;
+	margin-top: 1170px;
      -webkit-animation: infinite-spinning 2s infinite;
-}
-
-.spin:hover {
-	width: 220px;
-	height: 220px;
-	transition: all 2s ease;
-
 }
 
 .para9 {
@@ -260,6 +275,7 @@ p {
 
 .transparent {
 	background-image: url(http://headshotsmarathon.org/home/wp-content/uploads/2012/02/Megaman8bit.jpg);
+	display: inline-block;
 	margin-top: 50px;
 	width: 280px;
 	height: 310px;
@@ -267,8 +283,92 @@ p {
 
 .transparent:active {
 	background-image: url(http://static.gamesradar.com/images/mb/GamesRadar/us/Games/M/Mega%20Man%209/Everything%20Else/Raw/rock1--article_image.jpg);
+	display: inline-block;
 	margin-top: 50px;
 	width: 420px;
 	height: 310px;
 }
 
+.chart {
+
+}
+
+.line1 {
+	float: right;
+	display: inline-block;
+	background-color: black;	
+	width: 50px;
+	height: 15px;
+}
+
+.line1:hover {
+	float: right;
+	height: 50px;
+	transition: all 1s ease;
+}
+
+.line2 {
+	float: right;
+	display: inline-block;
+	background-color: blue;
+	width: 50px;
+	height: 15px;
+}
+
+.line2:hover{
+	float: right;
+	height: 40px;	
+	transition: all 1s ease;
+}
+
+.line3 {
+	float: right;
+	display: inline-block;
+	background-color: green;
+	width: 50px;
+	height: 15px;
+}
+
+.line3:hover {
+	float: right;
+	height: 35px;	
+	transition: all 1s ease;
+
+}
+
+.line4 {
+	float: right;
+	display: inline-block;
+	background-color: red;
+	width: 50px;
+	height: 15px;
+}
+
+.line4:hover {
+	float: right;
+	height: 25px;
+	transition: all 1s ease;
+}
+
+.para10 {
+	float: left;
+	padding-top: 60px;
+}
+
+.para11 {
+	float: left;
+	padding-top: 100px;
+}
+
+.rectangle {
+	border-radius: 8px;
+	display: inline-block;
+	margin-top: 100px;
+	background-color: rgb(71, 119, 69);
+	width: 400px;
+	height: 200px;
+}
+
+.rectangle:hover{
+	 -webkit-animation: infinite-spinning 2s infinite;
+}
