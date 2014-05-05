@@ -20,20 +20,26 @@
 }
 
 @-webkit-keyframes font {
-        0%, 100% {
-                font-size: 30px;
+        0% {
+            font-size: 30px;
         }
         50% {
-                font-size: 60px;
+            font-size: 60px;
+        }
+        100% {
+        	font-size: 30px;
         }
 }
 
 @-webkit-keyframes font2 {
-        0%, 100% {
-                font-size: 10px;
+        0% {
+        	font-size: 10px;
         }
         50% {
-                font-size: 40px;
+            font-size: 40px;
+        }
+        100% {
+        	font-size: 10px;
         }
 }
 
@@ -57,10 +63,10 @@
 		width: 400px;
 	}
 	30% {
-		width: 100px;
+		width: 500px;
 	}
 	50% {
-		width: 100px;
+		width: 300px;
 	}
 
 	100% {
@@ -580,11 +586,18 @@ p {
 }
 
 .move {
-	width: 400px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 100px;
+	width: 200px;
 	height: 200px;
 	margin-top: 60px;
 	border-radius: 8px;
 	background-color: rgb(71, 119, 69);
+	
+}
+
+.move:hover {
 	-webkit-animation: square3 3s infinite;
 	transition: all 1s ease;
 }
@@ -642,7 +655,7 @@ p {
 }
 
 .key:active {
-	-webkit-animation: turn 3s;
+	-webkit-animation: turn 1.5s;
 }
 
 .morph {
@@ -720,19 +733,44 @@ p {
 	}
 }
 
-@-webkit-keyframes skew {
+@-webkit-keyframes color {
 	0% {
-		-webkit-transform: skewx(0deg);
+		background-color: blue;
+	}
+	20% {
+		background-color: green;
+	}
+	30% {
+		background-color: yellow
 	}
 	50% {
-		-webkit-transform: skewy(30deg);
+		background-color: orange;
+	}
+	70% {
+		background-color: red;
+	}
+	90% {
+		background-color: purple;
 	}
 	100% {
-		-webkit-transform: skewx(0deg);
+		background-color: blue;
 	}
+
 }
 
+.morph6 {
+	margin: 0 auto;
+	-webkit-animation: translate2 5s infinite;
+}
 
+.morph7 {
+	margin: 0 auto;
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	-webkit-animation: color 3s infinite;
+}
 
 
 
@@ -809,4 +847,17 @@ p {
     -webkit-transform:scale(1.5); 
     overflow: visible;
     z-index: 2
+}
+
+.hidden {
+	width: 3px;
+	height: 3px;
+	display: inline-block;
+}
+
+.hidden:hover {
+	background-image: url(http://baby-recipes.com/wp-content/uploads/2014/02/banana.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 }
